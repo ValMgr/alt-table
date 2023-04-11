@@ -1,0 +1,122 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Microservices - Evalutations",
+    "dateExported": "2023-03-31T09:02:55.110Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ad87fb53-62b8-4dc7-b7fd-a169af90e8bd",
+            "colId": "21d8207a-cc6b-405b-9de4-9a3d58fecf77",
+            "containerId": "",
+            "name": "Create meal",
+            "url": "http://localhost:3000/api/meal",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-24T12:25:48.601Z",
+            "modified": "2023-03-24T16:47:09.750Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"name\": \"Pizza Orientale\",\n \"description\": \"Une pizza avec des merguez\",\n \"price\": 13.50,\n \"type\": \"Plat Principal\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a282eb3f-c23b-4b0a-97ba-fc88ee016603",
+            "colId": "21d8207a-cc6b-405b-9de4-9a3d58fecf77",
+            "containerId": "",
+            "name": "Get Meals list",
+            "url": "http://localhost:3000/api/meal",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-24T12:25:56.872Z",
+            "modified": "2023-03-24T12:25:56.872Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dfb41665-fd83-41f2-84fb-e7d51ef670ae",
+            "colId": "21d8207a-cc6b-405b-9de4-9a3d58fecf77",
+            "containerId": "",
+            "name": "Get Stock",
+            "url": "http://localhost:3000/api/stock",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-03-24T12:47:48.910Z",
+            "modified": "2023-03-24T12:47:48.910Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "afbea94e-b98f-4541-8c65-e193cca22e7a",
+            "colId": "21d8207a-cc6b-405b-9de4-9a3d58fecf77",
+            "containerId": "",
+            "name": "Add to Stock ",
+            "url": "http://localhost:3000/api/stock/f72f15fb-aec7-41e9-9372-67b28a44415c",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-03-24T16:38:31.583Z",
+            "modified": "2023-03-25T19:43:51.645Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"f72f15fb-aec7-41e9-9372-67b28a44415c\",\n  \"quantity\": 200\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c5fd9040-79d2-49b8-8f8f-97d047c301b5",
+            "colId": "21d8207a-cc6b-405b-9de4-9a3d58fecf77",
+            "containerId": "",
+            "name": "Get Menu",
+            "url": "http://localhost:3000/api/meal/menu",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-03-25T22:34:49.442Z",
+            "modified": "2023-03-25T22:34:49.442Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bb43ca26-3705-4147-8143-476b505554e9",
+            "colId": "21d8207a-cc6b-405b-9de4-9a3d58fecf77",
+            "containerId": "",
+            "name": "Get Orders",
+            "url": "http://localhost:3000/api/orders",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-03-25T23:58:25.018Z",
+            "modified": "2023-03-25T23:58:25.018Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "298f50fa-e867-48f5-812b-80f42fa6a706",
+            "colId": "21d8207a-cc6b-405b-9de4-9a3d58fecf77",
+            "containerId": "",
+            "name": "Create Order",
+            "url": "http://localhost:3000/api/orders",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-03-25T23:58:28.842Z",
+            "modified": "2023-03-26T16:23:24.022Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"order\": [\n    {\n      \"meal\": \"48ada901-68f5-47b8-bbbc-c337a8e82056\"\n    \n    },\n    {\n      \"meal\": \"48ada901-68f5-47b8-bbbc-c337a8e82056\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
